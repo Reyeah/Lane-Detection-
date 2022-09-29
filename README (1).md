@@ -64,3 +64,6 @@ def gaussian_kernel(size, sigma=1):
 Hough lines generated indicate multiple lines on the same lane. So, these lines are averaged to represent a single line. Also, some lines are partially detected. The averaged lines are extrapolated to cover the full length of the lanes.
 
 The averaging process is performed based on the slopes of the multiple lines, which are to be grouped together belonging to either the left lane or the right lane. In the image, the y co-ordinate is reversed, (as the origin is at the top left corner) thus having a higher value when y is lower in the image. By this convention, the left lane has a negative slope and the right one has a positive slope. All lines having positive slope are grouped together and averaged to get the right lane, and vice versa for the negative slopes to obtain the left lane. Final lanes detected can be seen below:
+
+
+![Hough_lines_avg](https://user-images.githubusercontent.com/79323560/193099506-d9728bb4-73e7-4bfe-aa58-3faec0d7449e.png)
